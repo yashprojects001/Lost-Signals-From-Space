@@ -1,0 +1,93 @@
+body{
+background:black;
+color:#00ff9f;
+font-family:Courier New, monospace;
+text-align:center;
+padding:40px;
+}
+
+.terminal{
+border:2px solid #00ff9f;
+padding:30px;
+box-shadow:0 0 20px #00ff9f;
+}
+
+.menu a{
+display:block;
+margin:20px;
+color:#00ff9f;
+text-decoration:none;
+font-size:20px;
+}
+
+.menu a:hover{
+text-shadow:0 0 10px #00ff9f;
+}
+
+.glitch{
+animation:glitch 1s infinite;
+}
+
+@keyframes glitch{
+0%{text-shadow:2px 2px red;}
+50%{text-shadow:-2px -2px blue;}
+100%{text-shadow:2px -2px red;}
+}
+
+.signal{
+font-size:18px;
+margin:30px;
+}
+
+.decoded{
+font-size:22px;
+color:#00ffaa;
+}
+
+.logs li{
+cursor:pointer;
+margin:10px;
+}
+
+.logs li:hover{
+color:white;
+}
+
+/* RADAR */
+
+.radar{
+width:250px;
+height:250px;
+border-radius:50%;
+border:3px solid #00ff9f;
+margin:40px auto;
+position:relative;
+overflow:hidden;
+}
+
+.beam{
+width:50%;
+height:2px;
+background:#00ff9f;
+position:absolute;
+top:50%;
+left:50%;
+transform-origin:left;
+animation:spin 3s linear infinite;
+}
+
+.dot{
+width:10px;
+height:10px;
+background:#00ff9f;
+border-radius:50%;
+position:absolute;
+top:70%;
+left:60%;
+box-shadow:0 0 10px #00ff9f;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
